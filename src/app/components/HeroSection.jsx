@@ -13,7 +13,7 @@ const HeroSection = () => {
                             Hello I'm
                         </span>
                         <br></br>
-                        <TypeAnimation 
+                        <TypeAnimation
                             sequence={[
                                 'Esra',
                                 1000,
@@ -27,17 +27,16 @@ const HeroSection = () => {
                             wrapper="div"
                             cursor={true}
                             repeat={Infinity}
-                            
                         />
                     </h1>
-                    
+
                     <div>
                         <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-pink-500 via-purple-500 to-blue-500 text-white">
                             Hire Me
                         </button>
                         <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 text-white  mt-3 ">
                             <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
-                                Download CV{' '}
+                                Download CV
                             </span>
                         </button>
                     </div>
