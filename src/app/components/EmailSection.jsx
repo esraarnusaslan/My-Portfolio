@@ -7,6 +7,7 @@ import Image from 'next/image';
 
 const EmailSection = () => {
     const [emailSubmitted, setEmailSubmitted] = useState(false);
+   
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -34,6 +35,8 @@ const EmailSection = () => {
             setEmailSubmitted(true);
         }
     };
+
+   
 
     return (
         <section

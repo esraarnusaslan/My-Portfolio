@@ -31,12 +31,24 @@ const HeroSection = () => {
                     </h1>
 
                     <div>
-                        <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-secondary-500 via-primary-500 to-blue-500 text-white">
-                            Hire Me
-                        </button>
+                        <a href="#contact">
+                            <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-secondary-500 via-primary-500 to-blue-500 text-white">
+                                Hire Me
+                            </button>
+                        </a>
+
                         <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500 text-white  mt-3 ">
                             <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
-                                Download CV
+                                <a
+                                    href="assets/Resume.pdf"
+                                    className="resume-download"
+                                    data-toggle="tooltip"
+                                    data-placement="bottom"
+                                    title="Download"
+                                    target={'_blank'}
+                                >
+                                    Download CV
+                                </a>
                             </span>
                         </button>
                     </div>

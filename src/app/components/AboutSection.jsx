@@ -3,27 +3,66 @@ import React, { useState, useTransition } from 'react';
 import Image from 'next/image';
 import TabButton from './TabButton';
 
+const skills = [
+    'HTML',
+    'CSS',
+    'Bootstrap',
+    'SASS',
+    'Webpack',
+    'React',
+    'Next.js',
+    'JavaScript',
+    'Redux',
+    'Web Service API',
+    'TypeScript',
+    'Responsive Web Design',
+    'UI/UX',
+    'Java',
+    'OOP',
+    'Spring Framework',
+    'MongoDB',
+    'PostgreSQL',
+    'Hibernate',
+    'JUnit',
+    'Microservice',
+    'RESTful',
+    'API',
+    'Algorithm',
+    'Design Pattern',
+    'Maven',
+    'ORM',
+    'Jakarta EE',
+    'JDBC',
+    'Apache Kafka',
+    'JWT',
+    'Git-Github',
+    'JIRA',
+    'SDLC',
+    'Figma',
+    'Google Seo',
+    'Wordpress',
+    'Adobe Illustrator',
+    'Adobe Photoshop',
+    'AWS',
+    'Docker',
+    'Scrum',
+    'Postman',
+];
+
 const TAB_DATA = [
     {
         title: 'Skills',
         id: 'skills',
         content: (
-            <ul className="list-disc pl-2">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>BootStrap</li>
-                <li>SASS</li>
-                <li>WebPack</li>
-                <li>React</li>
-                <li>Next.js</li>
-                <li>JavaScript</li>
-                <li>Java</li>
-                <li>Spring Framework</li>
-                <li>Git</li>
-                <li>GitHub</li>
-                <li>Mongo DB</li>
-                <li>PostgreSQL</li>
-            </ul>
+            <div className="flex flex-wrap">
+                {skills.map((skill, index) => (
+                    <div key={index} className="w-full md:w-1/2 lg:w-1/3">
+                        <ul className="list-disc pl-2">
+                            <li>{skill}</li>
+                        </ul>
+                    </div>
+                ))}
+            </div>
         ),
     },
     {
@@ -64,7 +103,7 @@ const AboutSection = () => {
         });
     };
     return (
-        <section className="text-white">
+        <section className="text-white" id="about">
             <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
                 <Image
                     src="/images/about-image.png"
@@ -72,7 +111,7 @@ const AboutSection = () => {
                     height={500}
                     alt="about"
                 />
-                <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
+                <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
                     <h2 className="text-4xl font-bold text-white mb-4 mt-4">
                         About Me
                     </h2>
