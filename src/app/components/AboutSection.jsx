@@ -125,9 +125,9 @@ const AboutSection = () => {
                         of the School Management project; HTML,CSS,SCSS and
                         BootStrap, React as JavaScript Framework, Context API
                         and Redux as state management and WebPack for packaging
-                        Js files. I'm good at writing clean, clear and readable
-                        code, I learn quickly and I'm good at showing off what
-                        I've learned.
+                        Js files. I&apos;m good at writing clean, clear and readable
+                        code, I learn quickly and I&apos;m good at showing off what
+                        I&apos;ve learned.
                     </p>
                     <div className="flex flex-row  justify-start mt-8 ">
                         <TabButton
