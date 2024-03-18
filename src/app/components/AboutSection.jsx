@@ -84,11 +84,11 @@ const TAB_DATA = [
             <ul className="list-disc pl-2">
                 <li>
                     Full Stack Developer
-                    <ol>Talentech Solutions - Internship</ol>
+                    <ol>E-Commerce Project - Internship</ol>
                 </li>
                 <li>
                     Full Stack Developer
-                    <ol>Caltech Solutions - Internship</ol>
+                    <ol>Call-Tech Project - Internship</ol>
                 </li>
             </ul>
         ),
