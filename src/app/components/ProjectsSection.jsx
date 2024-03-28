@@ -138,6 +138,13 @@ const projectsData = [
         tag: ['All', 'Web'],
         gitUrl: 'https://github.com/esraarnusaslan/BOOTSTRAP/tree/main/practice/day02',
     },
+    {
+        id: 20,
+        title: 'Exchange Currency App',
+        image: '/images/projects/exchange-currency.png',
+        tag: ['All', 'Web'],
+        gitUrl: 'https://github.com/esraarnusaslan/Vite-React/tree/main/Currency-App',
+    },
 ];
 
 const ProjectsSection = () => {
@@ -194,7 +201,10 @@ const ProjectsSection = () => {
                             title={project.title}
                             imgUrl={project.image}
                             gitUrl={project.gitUrl}
-                            showEyeIcon={project.title !=="E-Commerce Website" && project.title !== "Call-Tech Education Website"}
+                            showEyeIcon={
+                                project.title !== 'E-Commerce Website' &&
+                                project.title !== 'Call-Tech Education Website'
+                            }
                         />
                     </motion.li>
                 ))}
